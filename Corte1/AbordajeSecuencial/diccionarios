@@ -1,0 +1,96 @@
+# sensores = {"sala": 21, "cocina": 23, "dormitorio": 20, "despensa": 22}
+# num_cameras = {"patio trasero": 6, "garaje": 2, "camino de entrada": 1}
+
+# imprimir (sensores)
+# imprimir(núm_cámaras)
+# traducciones = {"montaña": "orod", "pan": "bajo", "amigo": "mellon", "caballo": "roch" }
+# imprimir (traducciones)
+
+##Verificando un error:
+# potencias = {[1, 2, 4, 8, 16]: 2, [1, 3, 9, 27, 81]: 3}
+# # imprimir(poderes)
+ # niños = {"von Trapp": ["Johannes", "Rosmarie", "Eleonore"] , "Corleone": ["Sonny", "Fredo", "Michael"]}
+# imprimir (niños)
+
+# mi_diccionario_empty = {}
+# imprimir(mi_diccionario_vacío)
+
+# menú = {"avena": 3, "tostada de aguacate": 6, "jugo de zanahoria": 5, "muffin de arándanos": 2}
+# print("Antes: ", menú)
+# menú["tarta de queso"] = 8
+# print("Después", menú)
+# animales_in_zoo = {"dinosaurios": 0}
+# animales_in_zoo = {"dinosaurios": 0}
+# animales_en_zoo = {"caballos": 2}
+# imprimir(animales_en_zoo)
+
+
+##Agregar varias claves
+# sensores = {"sala": 21, "cocina": 23, "dormitorio": 20}
+# print("Antes", sensores)
+  # #Si quisiéramos agregar 3 nuevas habitaciones, podríamos usar:
+# sensores.update({"despensa": 22, "habitación de invitados": 25, "patio": 34})
+# print("Después", sensores)
+
+###
+# user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
+# imprimir(id_usuario)
+# user_ids.update({"theLooper": 138475, "stringQueen": 85739})
+# imprimir(id_usuario)
+
+## Sobrescribir valores ##
+#Sabemos que podemos agregar una clave usando la siguiente sintaxis:
+#menú["plátano"] = 3
+# menú = {"avena": 3, "tostada de aguacate": 6, "jugo de zanahoria": 5, "muffin de arándanos": 2}
+# print("Antes: ", menú)
+# menú["avena"] = 5
+# print("Después", menú)
+
+## Observe que el valor de "avena" ahora ha cambiado a 5.
+# oscar_winners = {"Mejor Película": "La La Land", "Mejor Actor": "Casey Affleck", "Mejor Actriz": "Emma Stone", "Película de Animación": "Zootopia"}
+# print("Antes", ganadores_oscar)
+# imprimir()
+# oscar_winners.update({"Actriz de reparto": "Viola Davis"})
+# print("Después1", ganadores_oscar)
+# imprimir()
+# oscar_winners["Mejor película"] = "Claro de luna"
+# print("Después2", ganadores_oscar)
+
+
+###Dict comprensiones
+#Digamos que tenemos dos listas que queremos combinar en una 
+#diccionario, como una lista de estudiantes y una lista de sus alturas, 
+#en pulgadas:
+nombres = ['Jenny', 'Alexus', 'Sam', 'Grace']
+alturas = [61, 70, 67, 64]
+
+#Python te permite crear un diccionario usando 
+# un dictado de comprensión, con esta sintaxis:
+
+# zipEstudiantes = zip(nombres, alturas)
+# print("zipEstudiantes: ", zipEstudiantes)
+
+# estudiantes = {clave:valor de la clave, valor en zip(nombres, alturas)}
+# #estudiantes ahora es {'Jenny': 61, 'Alexus': 70, 'Sam': 67, 'Grace': 64}
+# imprimir (estudiantes)
+
+# #zip() combina dos listas en un iterador de tuplas con los elementos de la lista emparejados. Este dictado de comprensión:
+
+# bebidas = ["espresso", "chai", "descafeinado", "goteo"]
+# cafeína = [64, 40, 0, 120]
+
+# zipped_drinks = zip(bebidas, cafeína)
+# imprimir(bebidas_comprimidas)
+
+# bebidas_a_cafeína = {clave:valor de la clave, valor en bebidas_comprimidas}
+# imprimir(bebidas_con_cafeína)
+
+canciones = ["Como una piedra rodante", "Satisfacción", "Imagina", "Qué está pasando", "Respeto", "Buenas vibraciones"]
+recuentos de reproducción = [78, 29, 44, 21, 89, 5]
+reproducciones = {clave:valor de la clave, valor en zip(canciones, recuentos de reproducciones)}
+imprimir (reproduce)
+juega.update({"Purple Haze": 1})
+juega.update({"Respeto": 94})
+print("Después de: ", reproduce)
+biblioteca = {"Las mejores canciones": reproducciones, "Sentimientos del domingo": {}}
+imprimir (biblioteca)
