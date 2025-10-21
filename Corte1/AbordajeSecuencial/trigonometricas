@@ -1,0 +1,20 @@
+import math
+import sympy as sp
+
+def convertir_radianes(radianes):
+    # Convertimos el número a una fracción de π
+    pi_frac = sp.nsimplify(radianes / sp.pi, [sp.pi])
+    
+    # Calculamos seno y coseno simbólicos
+    seno = sp.sin(pi_frac * sp.pi)
+    coseno = sp.cos(pi_frac * sp.pi)
+
+    # Mostramos los resultados
+    print(f"\nÁngulo en radianes: {radianes}")
+    print(f"Equivalente simbólico: {pi_frac}·π")
+    print(f"sen({pi_frac}·π) = {seno}")
+    print(f"cos({pi_frac}·π) = {coseno}")
+
+# Ejemplo de uso
+radian = float(input("Ingresa un valor en radianes: "))
+convertir_radianes(radian)
