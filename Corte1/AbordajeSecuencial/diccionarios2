@@ -1,0 +1,115 @@
+# #### Obtener una clave
+# #puedes acceder a los valores que contiene proporcionando la clave:
+
+# building_heights = {"Burj Khalifa": 828, "Torre de Shanghai": 632, "Abraj Al Bait": 601, "Ping An": 599, "Lotte World Tower": 554,5, "One World Trade": 541,3}
+# print(alturas_edificio["Burj Khalifa"]) # Impresiones 828
+# print(building_heights["Ping An"]) # Imprime 599
+  
+# zodiac_elements = {"agua": ["Cáncer", "Escorpio", "Piscis"], "fuego": ["Aries", "Leo", "Sagitario"], "tierra": ["Tauro", "Virgo", "Capricornio"], "aire":["Géminis", "Libra", "Acuario"]}
+# print(zodiac_elements["tierra"])
+# print(zodiac_elements["fuego"])
+
+# ## Obtener una clave no válida
+
+# building_heights = {"Burj Khalifa": 828, "Torre de Shanghai": 632, "Abraj Al Bait": 601, "Ping An": 599, "Lotte World Tower": 554,5, "One World Trade": 541,3}
+# print(alturas_edificio["Hito 81"])
+
+# ##Una forma de evitar este error es verificar primero si la clave existe en el diccionario:
+# key_to_check = "Hito 81"
+
+# si key_to_check en building_heights:
+# print(alturas_edificio["Hito 81"])
+
+# zodiac_elements = {"agua": ["Cáncer", "Escorpio", "Piscis"], "fuego": ["Aries", "Leo", "Sagitario"], "tierra": ["Tauro", "Virgo", "Capricornio"], "aire":["Géminis", "Libra", "Acuario"]}
+
+# zodiac_elements["energy"] = "No es un elemento del Zodíaco"
+  # si "energía" en zodiac_elements:
+# print(zodiac_elements["energía"])
+
+# ##Obtenga una llave de forma segura
+# building_heights = {"Burj Khalifa": 828, "Torre de Shanghai": 632, "Abraj Al Bait": 601, "Ping An": 599, "Lotte World Tower": 554,5, "One World Trade": 541,3}
+
+# #esta línea devolverá 632:
+# building_heights.get("Torre de Shanghai")
+
+# #esta línea devolverá Ninguno:
+# building_heights.get("Mi casa")
+
+####
+# user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
+# user_ids.get("teraCoder")
+
+# if user_ids.get("teraCoder") == Ninguno:
+# tc_id = 1000
+# demás: 
+# tc_id = user_ids.get("teraCoder")
+
+# imprimir(tc_id)
+
+# if user_ids.get("superStackSmash") == Ninguno:
+# id_pila = 100000
+
+# imprimir(stack_id)
+  # ###Eliminar una clave
+#.pop() funciona para eliminar elementos de un diccionario, cuando conoce el valor clave.
+#raffle = {223842: "Osito de peluche", 872921: "Entradas para conciertos", 320291: "Cesta de regalo", 412123: "Collar", 298787: "Fabricante de pasta"}
+#print(raffle.pop(320291, "Sin premio"))
+## Imprime "Cesta de regalo"
+#imprimir(rifa)
+# # Impresiones {223842: "Teddy Bear", 872921: "Entradas para conciertos", 412123: "Collar", 298787: "Pasta Maker"}
+# print(raffle.pop(100000, "Sin premio"))
+# # Imprime "Sin premio"
+# imprimir(rifa)
+# # Impresiones {223842: "Teddy Bear", 872921: "Entradas para conciertos", 412123: "Collar", 298787: "Pasta Maker"}
+# print(raffle.pop(872921, "Sin premio"))
+# # Imprime "Entradas para conciertos"
+# imprimir(rifa)
+# # Impresiones {223842: "Osito de peluche", 412123: "Collar", 298787: "Fabricante de pasta"}
+# elementos_disponibles = {"poción de salud": 10, "pastel de la cura": 5, "elixir verde": 20, "sándwich de fuerza": 25, "granos de resistencia": 15, "guiso energético": 30}
+# puntos_salud = 20
+
+# puntos_de_salud += elementos_disponibles.pop("granos de resistencia", 0)
+# puntos_de_salud += elementos_disponibles.pop("guiso energético", 0)
+# puntos_salud += elementos_disponibles.pop("pan místico", 0)
+
+# imprimir (elementos_disponibles)
+# imprimir(puntos_salud)
+
+# ##Obtener todas las claves
+# test_scores = {"Grace":[80, 72, 90], "Jeffrey":[88, 68, 81], "Sylvia":[80, 82, 84], "Pedro":[98, 96, 95], "Martin":[78, 80, 78], "Dina":[64, 60, 75]}
+# imprimir(lista(puntuaciones_pruebas))
+# # Impresiones ["Grace", "Jeffrey", "Sylvia", "Pedro", "Martin", "Dina"]
+
+# para estudiante en test_scores.keys():
+# imprimir (estudiante)
+  # user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
+# num_exercises = {"funciones": 10, "sintaxis": 13, "flujo de control": 15, "bucles": 22, "listas": 19, "clases": 18, "diccionarios": 18}
+
+# usuarios = user_ids.keys()
+# lecciones = num_ejercicios.keys()
+
+# imprimir (usuarios)
+# imprimir(lecciones)
+
+##Obtener todos los valores
+# test_scores = {"Grace":[80, 72, 90], "Jeffrey":[88, 68, 81], "Sylvia":[80, 82, 84], "Pedro":[98, 96, 95], "Martin":[78, 80, 78], "Dina":[64, 60, 75]}
+
+# para score_list en test_scores.values():
+# imprimir(lista_puntuación)
+# num_exercises = {"funciones": 10, "sintaxis": 13, "flujo de control": 15, "bucles": 22, "listas": 19, "clases": 18, "diccionarios": 18}
+
+# total_ejercicios = 0
+
+# para ejercicios en num_exercises.values():
+# total_ejercicios += ejercicios
+# imprimir(total_ejercicios)
+
+##Obtener todos los artículos
+# marcas_grandes = {"Apple": 184, "Google": 141.7, "Microsoft": 80, "Coca-Cola": 69.7, "Amazon": 64.8}
+
+# para empresa, valor en most_brands.items():
+# print(empresa + " tiene un valor de " + str(valor) + " mil millones de dólares. ")
+  # pct_women_in_occupation = {"CEO": 28, "Gerente de ingeniería": 9, "Farmacéutico": 58, "Médico": 40, "Abogado": 37, "Ingeniero aeroespacial": 9}
+
+# para ocupación, porcentaje en pct_women_in_occupation.items():
+# print("Las mujeres constituyen " + str(porcentaje) + " porcentaje de " + ocupación + "s.")
