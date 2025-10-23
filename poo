@@ -1,0 +1,62 @@
+class CALCULADORA_OOP:
+    def init(self):
+     pass
+def sumar (self,a,b):
+    return a + b
+def restar (self,a,b):
+    return a - b
+def multiplicar (self,a,b):
+    return a * b
+def dividir (self,a,b):
+    if b==0:
+     return "no es posible dividir por 0 "
+    return a / b
+def potenciacion (self,base,exponente):
+    resultado= 1
+    if exponente >=0:
+       for _ in range(exponente):
+          resultado*=base
+    else:
+       for _ in range(-exponente):
+          resultado*=base
+       resultado = 1 /resultado
+       return resultado
+def raizcuadrada (self,numero):
+    if numero < 0:
+       return "coloque un numero positivo"
+    if numero==0:
+       return 0
+    x= numero
+    for _ in range(20):
+          x= 0.5*(x+numero/x)
+          return x
+def factorial (self,n):
+    if n < 0:
+       return "coloque un numero positivo para calcular el factorial"
+    elif n==0 or n==1:
+       return 1
+    else:
+       resultado = 1
+       for i in range(2,n+1):
+          resultado *=i
+          return resultado
+class areas:
+    def init (self):
+        pass
+    def cuadrado (self,lado):
+        return lado *lado
+    def rectangular (self,base,altura):
+        return base *altura
+    def circunferencia (self,radio):
+        pi= 3.1416
+        return pi*radio*radio
+    def triangulo_rectangulo (self,base,altura):
+        return (base*altura)/2
+cal = CALCULADORA_OOP()
+area = funcionesgeometricas()
+print ("calculadora OOP")
+print ("suma",cal.sumar(4,6))
+print ("suma",cal.sumar(4,6))
+print ("suma",cal.sumar(4,6))
+print ("suma",cal.sumar(4,6))
+print ("suma",cal.sumar(4,6))
