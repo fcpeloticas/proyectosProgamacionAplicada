@@ -1,0 +1,16 @@
+class Areas:
+    def __init__(self):
+        print("  áreas geométricas lista para usar")
+
+    def cuadrado(self, lado):
+        return lado * lado
+
+    def rectangulo(self, base, altura):
+        return base * altura
+
+    def circunferencia(self, radio):
+        pi = 3.1416
+        return pi * radio * radio
+
+    def triangulo_rectangulo(self, base, altura):
+        return (base * altura) / 2
