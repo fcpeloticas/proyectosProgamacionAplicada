@@ -1,0 +1,90 @@
+def menu():
+    calc = Calculadora()
+    area = Areas()
+
+    while True:
+        print("\n OPCIONES PRINCIPALES ")
+        print("1. Sumar")
+        print("2. Restar")
+        print("3. Multiplicacion")
+        print("4. Division")
+        print("5. Potenciación")
+        print("6. Raíz cuadrada")
+        print("7. Factorial")
+        print("8. Áreas geométricas")
+        print("9. Mostrar total de operaciones realizadas")
+        print("10. Salir")
+
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            a = float(input("Ingrese el primer número: "))
+            b = float(input("Ingrese el segundo número: "))
+            print("Resultado:", calc.sumar(a, b))
+
+        elif opcion == "2":
+            a = float(input("Ingrese el primer número: "))
+            b = float(input("Ingrese el segundo número: "))
+            print("Resultado:", calc.restar(a, b))
+
+        elif opcion == "3":
+            a = float(input("Ingrese el primer número: "))
+            b = float(input("Ingrese el segundo número: "))
+            print("Resultado:", calc.multiplicar(a, b))
+
+        elif opcion == "4":
+            a = float(input("Ingrese el primer número: "))
+            b = float(input("Ingrese el segundo número: "))
+            print("Resultado:", calc.dividir(a, b))
+
+        elif opcion == "5":
+            base = float(input("Ingrese la base: "))
+            exponente = int(input("Ingrese el exponente: "))
+            print("Resultado:", calc.potencia(base, exponente))
+
+        elif opcion == "6":
+            num = float(input("Ingrese el número: "))
+            print("Resultado:", calc.raiz_cuadrada(num))
+
+        elif opcion == "7":
+            n = int(input("Ingrese un número entero: "))
+            print("Resultado:", calc.factorial(n))
+
+        elif opcion == "8":
+            print("\n Cálculo de Áreas ")
+            print("a) Cuadrado")
+            print("b) Rectángulo")
+            print("c) Circunferencia")
+            print("d) Triángulo rectángulo")
+            tipo = input("Seleccione una figura: ").lower()
+
+            if tipo == "a":
+                lado = float(input("Ingrese el lado: "))
+                print("Área del cuadrado:", area.cuadrado(lado))
+            elif tipo == "b":
+                base = float(input("Ingrese la base: "))
+                altura = float(input("Ingrese la altura: "))
+                print("Área del rectángulo:", area.rectangulo(base, altura))
+            elif tipo == "c":
+                radio = float(input("Ingrese el radio: "))
+                print("Área de la circunferencia:", area.circunferencia(radio))
+            elif tipo == "d":
+                base = float(input("Ingrese la base: "))
+                altura = float(input("Ingrese la altura: "))
+                print("Área del triángulo rectángulo:", area.triangulo_rectangulo(base, altura))
+            else:
+                print("Opción no valida")
+
+        elif opcion == "9":
+            print(f" Total de operaciones realizadas: {calc.total_operaciones}")
+
+        elif opcion == "10":
+            print(" ¡Hasta luego!")
+            break
+
+        else:
+            print(" Opción invalida Intente nuevamente.")
+
+# Ejecución del programa
+if __name__ == "__main__":
+    menu()
