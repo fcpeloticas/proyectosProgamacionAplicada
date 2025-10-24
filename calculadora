@@ -46,7 +46,7 @@ class Calculadora:
     def factorial(self, n):
         self.total_operaciones += 1
         if n < 0:
-            return "Error factorial  negativos"
+            return "Error factorial  negativo"
         elif n == 0 or n == 1:
             return 1
         else:
